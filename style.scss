@@ -292,3 +292,25 @@ footer {
 
 // Some hacks I added to resize images that are probably bad
 img[alt=yilun] { width: 200px; }
+
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.abstract-inline {
+    display: inline;
+}
+
+.abstract-inline summary {
+    display: inline;
+    cursor: pointer;
+}
+
+.abstract-inline p {
+    width: 100%;
+    margin-top: 8px;
+}
