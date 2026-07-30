@@ -296,21 +296,25 @@ img[alt=yilun] { width: 200px; }
 
 .info {
     display: flex;
-    align-items: center;
-    gap: 8px;
     flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
 }
 
-.abstract-inline {
-    display: inline;
+.info details.abstract-inline {
+    display: inline; /* keeps it from forcing a new line */
 }
 
-.abstract-inline summary {
+.info details.abstract-inline summary {
     display: inline;
     cursor: pointer;
+    color: inherit; /* match your link styling if desired */
 }
 
-.abstract-inline p {
+/* the abstract text itself should still be a block once opened */
+.info details.abstract-inline p {
+    display: block;
     width: 100%;
-    margin-top: 8px;
+    margin-top: 6px;
 }
+
