@@ -318,3 +318,27 @@ img[alt=yilun] { width: 200px; }
     margin-top: 6px;
 }
 
+
+.info details.abstract-inline p {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px 14px;
+    background-color: #f4f6f8;      /* 浅灰蓝背景，喜欢别的颜色可以改这里 */
+    border-left: 3px solid #4183C4; /* 左侧一条强调色，跟你链接颜色一致 */
+    border-radius: 4px;
+    font-size: 0.95em;
+    line-height: 1.5;
+    color: #444;
+}
+
+.info details.abstract-inline summary {
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    transition: background-color 0.15s ease;
+}
+
+.info details.abstract-inline summary:hover {
+    background-color: #f0f0f0;
+}
