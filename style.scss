@@ -315,13 +315,6 @@ img[alt=yilun] { width: 200px; }
 .info details.abstract-inline p {
     display: block;
     width: 100%;
-    margin-top: 6px;
-}
-
-
-.info details.abstract-inline p {
-    display: block;
-    width: 100%;
     margin-top: 8px;
     padding: 12px 14px;
     background-color: #f4f6f8;      /* 浅灰蓝背景，喜欢别的颜色可以改这里 */
@@ -334,9 +327,34 @@ img[alt=yilun] { width: 200px; }
 
 .info details.abstract-inline summary {
     font-weight: 600;
-    padding: 2px 8px;
+    padding: 2px 8px 2px 18px; /* 左边多留点空间给三角形 */
     border-radius: 4px;
     transition: background-color 0.15s ease;
+    position: relative;
+    list-style: none; /* 隐藏 Firefox/Safari 默认的三角 */
+}
+
+/* 隐藏 Chrome/Edge 默认的三角 */
+.info details.abstract-inline summary::-webkit-details-marker {
+    display: none;
+}
+
+/* 自己画的三角形，收起时指向右边 */
+.info details.abstract-inline summary::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    border-style: solid;
+    border-width: 5px 0 5px 7px;
+    border-color: transparent transparent transparent #666; /* 改这个颜色 */
+    transition: transform 0.15s ease;
+}
+
+/* 展开时三角旋转 90 度指向下方 */
+.info details.abstract-inline[open] summary::before {
+    transform: translateY(-50%) rotate(90deg);
 }
 
 .info details.abstract-inline summary:hover {
