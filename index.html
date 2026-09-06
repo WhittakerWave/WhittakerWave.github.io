@@ -102,39 +102,45 @@ a:hover{color:#bc6262}
 #misc-container{margin:0 0em;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px;font-size:1rem;line-height:1.4}
 /* #misc-container .subtitle{margin-top:30px;color:#566c7f} */
 
-#main-pub-container{margin:auto;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px}
-#main-pub-container .subtitle{color:#566c7f;}
-#main-pub-container .subtitle a {font-weight:400;font-size:18px}
-#main-pub-container .subtitle a.activated {color:#333333}
+#main-pub-container, #main-teaching-container{margin:auto;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px}
+#main-pub-container .subtitle, #main-teaching-container .subtitle{color:#566c7f;}
+#main-pub-container .subtitle a, #main-teaching-container .subtitle a {font-weight:400;font-size:18px}
+#main-pub-container .subtitle a.activated, #main-teaching-container .subtitle a.activated {color:#333333}
 #main-pub-container .subtitle a.activated:focus,
-#main-pub-container .subtitle a.activated:hover {text-decoration:none;cursor:initial}
-#main-pub-container .move-up {margin-top:-0.3cm}
-#main-pub-container .move-up-more {margin-top:-0.5cm}
-#main-pub-container .move-down {margin-top:0.8cm}
+#main-pub-container .subtitle a.activated:hover,
+#main-teaching-container .subtitle a.activated:focus,
+#main-teaching-container .subtitle a.activated:hover {text-decoration:none;cursor:initial}
+#main-pub-container .move-up, #main-teaching-container .move-up {margin-top:-0.3cm}
+#main-pub-container .move-up-more, #main-teaching-container .move-up-more {margin-top:-0.5cm}
+#main-pub-container .move-down, #main-teaching-container .move-down {margin-top:0.8cm}
 
-#main-pub-container .subtitle-aux {font-size:1rem}
-#main-pub-container .subtitle-aux a.activated {color:#333333}
+#main-pub-container .subtitle-aux, #main-teaching-container .subtitle-aux {font-size:1rem}
+#main-pub-container .subtitle-aux a.activated, #main-teaching-container .subtitle-aux a.activated {color:#333333}
 #main-pub-container .subtitle-aux a.activated:focus,
-#main-pub-container .subtitle-aux a.activated:hover {text-decoration:none;cursor:initial}
-#main-pub-container .subtitle-aux .note{margin-left:1em;color:#999999;text-decoration:none;font-size:14px}
+#main-pub-container .subtitle-aux a.activated:hover,
+#main-teaching-container .subtitle-aux a.activated:focus,
+#main-teaching-container .subtitle-aux a.activated:hover {text-decoration:none;cursor:initial}
+#main-pub-container .subtitle-aux .note, #main-teaching-container .subtitle-aux .note{margin-left:1em;color:#999999;text-decoration:none;font-size:14px}
 
 #main-pub-card-container{}
-#main-pub-card-container>h5{margin-bottom: 20px}
-#main-pub-card-container .pub-card{width: 100%;padding-bottom:15px;font-size:1rem}
-#main-pub-card-container .pub-card .col-l{text-align:center;padding-top:10px}
-#main-pub-card-container .pub-card .col-r{padding-top:10px}
-#main-pub-card-container .pub-card img{width:100%;margin:0 auto}
-#main-pub-card-container .pub-card-body{width:100%;background:transparent;padding-left:0px}
-#main-pub-card-container .pub-card .title{font-weight:600;font-size:1rem;margin-bottom:4px;line-height:1.4}
-#main-pub-card-container .pub-card .authors{font-weight:400;color:#666666;margin-bottom:4px;line-height:1.4}
-#main-pub-card-container .pub-card .authors a{color:#666666}
-#main-pub-card-container .pub-card .authors u{color:#333333;font-weight:600;text-decoration:none}
-#main-pub-card-container .pub-card .conference{color:#333333;font-weight:600}
-#main-pub-card-container .pub-card .note{display:block;color:#999999;text-decoration:none;font-size:12px}
-#main-pub-card-container .pub-card .info{margin-bottom:0;}
-#main-pub-card-container .row{margin:0}
-#main-pub-card-container .col-l,
-#main-pub-card-container .col-r{vertical-align:top;display:inline-block;margin:0;padding-left:0px}
+#main-pub-card-container>h5, #main-teaching-card-container>h5{margin-bottom: 20px}
+#main-pub-card-container .pub-card, #main-teaching-card-container .pub-card{width: 100%;padding-bottom:15px;font-size:1rem}
+#main-pub-card-container .pub-card .col-l, #main-teaching-card-container .pub-card .col-l{text-align:center;padding-top:10px}
+#main-pub-card-container .pub-card .col-r, #main-teaching-card-container .pub-card .col-r{padding-top:10px}
+#main-pub-card-container .pub-card img, #main-teaching-card-container .pub-card img{width:100%;margin:0 auto}
+#main-pub-card-container .pub-card-body, #main-teaching-card-container .pub-card-body{width:100%;background:transparent;padding-left:0px}
+#main-pub-card-container .pub-card .title, #main-teaching-card-container .pub-card .title{font-weight:600;font-size:1rem;margin-bottom:4px;line-height:1.4}
+#main-pub-card-container .pub-card .authors, #main-teaching-card-container .pub-card .authors{font-weight:400;color:#666666;margin-bottom:4px;line-height:1.4}
+#main-pub-card-container .pub-card .authors a, #main-teaching-card-container .pub-card .authors a{color:#666666}
+#main-pub-card-container .pub-card .authors u, #main-teaching-card-container .pub-card .authors u{color:#333333;font-weight:600;text-decoration:none}
+#main-pub-card-container .pub-card .conference, #main-teaching-card-container .pub-card .conference{color:#333333;font-weight:600}
+#main-pub-card-container .pub-card .note, #main-teaching-card-container .pub-card .note{display:block;color:#999999;text-decoration:none;font-size:12px}
+#main-pub-card-container .pub-card .info, #main-teaching-card-container .pub-card .info{margin-bottom:0;}
+#main-teaching-card-container .pub-card ul.info{margin:0;padding-left:1.2em;}
+#main-teaching-card-container .pub-card ul.info li{margin-bottom:4px;}
+#main-pub-card-container .row, #main-teaching-card-container .row{margin:0}
+#main-pub-card-container .col-l, #main-teaching-card-container .col-l,
+#main-pub-card-container .col-r, #main-teaching-card-container .col-r{vertical-align:top;display:inline-block;margin:0;padding-left:0px}
 
 #footer{padding:1.5em 0 1.5em;min-width:240px;background:#f4f4f4;opacity:0.95;font-size:14px;line-height:12px;text-align:left}
 #footer .container{max-width:540px;padding:0 45px}
@@ -244,11 +250,15 @@ a:hover{color:#bc6262}
                 <li><b>May 2024</b>: I am attending <a href="https://icerm.brown.edu/program/topical_workshop/tw-24-ips">Interacting Particle Systems: Analysis, Control, Learning and Computation</a>. Look forward to meeting you in Providence, RI!</del><em></em></li>
             </ul>
             <h5 class="subtitle">Research Highlights</h5>
-            <ul>
+               <ul>
+                <li><b>Quantitative Biophysics:</b> Physical principles and quantitative inference of mechanisms in cellular dynamics and chromosome organization</li>
+                <li><b>Disorder Systems</b>: Wave-number selection in pattern-forming systems</li>
+               </ul>
+            <!-- <ul>
                 <li><b>Biophysics</b>: Chemical reaction networks involved in cell signaling and 3D chromosome organization</li>
                 <li><b>Applied Physics</b>: Fluid dynamics; Single-molecule biophysics</li>
                 <li><b>Disorder Systems</b>: Wave-number selection in pattern-forming systems </li>
-            </ul> 
+            </ul> -->
         </div>
         <div id="main-pub-container">
             <h5 class="subtitle">Selected Publications
@@ -464,7 +474,7 @@ a:hover{color:#bc6262}
                                          </p>
                                     </details>
 
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -488,22 +498,22 @@ a:hover{color:#bc6262}
                                             Photoacoustic waves can be detected by recording optical beam deflection as a result of density gradients inherent in the waves. Beam deflection can be recorded from a single laser beam placed at a distance from the source where data are generated as a function of time, or by recording beam deflections at a single time as the position of the probe beam is varied. For either case, the deflection signal is shown to be described by an Abel transform of the pressure gradient. Here, the inversion of beam deflection data from photoacoustic sources with symmetry in one, two, and three dimensions is investigated. An iterative method based on total variation regularization and a regression procedure based on Lasso regularization are shown to result in accurate reproductions of the theoretical expressions that describe photoacoustic waves from simple sources.
                                          </p>
                                     </details>
-                                </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-            </div> 
+            </div>
         
         </div>
         <!-- <div id=""> -->
         <!-- </div> -->
-        <div id="main-pub-container">
+        <div id="main-teaching-container">
 
             <h5 class="subtitle">Teaching</h5>
-            <div id="main-pub-card-container">
-                <div class="pub-card" data-topic="experience" data-selected="False">
+            <div id="main-teaching-card-container">
+                <div class="pub-card" data-topic="experience" data-selected="true">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
                             <img src="data/prob_computing_logo.png" width="100%" playsinline autoplay muted loop preload/>
@@ -513,13 +523,14 @@ a:hover{color:#bc6262}
                                 <h5 class="title">Teaching Assistant, <a href="https://seas.harvard.edu/" target="_blank">Harvard University</a></h5>
                                 <!-- <h6 class="authors">
                                 </h6> -->
-                                <p class="info">
+                                <ul class="info">
                                     <li>
                                         <a href="https://toc.seas.harvard.edu/links/cs-223-probabilistic-analysis-and-algorithms-spring-2015" target="_blank">
                                             CS223: <em>Random Processes and Algorithms</em>, Spring 2023
                                         </a>
                                     </li>
-                                </p>
+                                    <!-- 再加一门课程就复制上面这个 <li>...</li> 整块，改课程号/名称/学期/链接即可 -->
+                                </ul>
                             </div>
                         </div>
                     </div>
